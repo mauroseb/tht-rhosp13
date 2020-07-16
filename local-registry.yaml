@@ -1,0 +1,4 @@
+parameter_defaults:
+  DockerInsecureRegistryAddress:
+  - undercloud.ctlplane.localdomain:8787
+  - 172.16.0.1:8787
