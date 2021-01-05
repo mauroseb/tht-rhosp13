@@ -15,6 +15,10 @@ parameter_defaults:
     osd_recovery_op_priority: 1
     osd_recovery_max_active: 1
     osd_max_backfills: 1
+    health_osd_check_delay: 40
+    health_osd_check_retries: 30
+    health_mon_check_retries: 10
+    health_mon_check_delay: 20
     is_hci: true
     ceph_osd_docker_cpu_limit: 2
   ManilaCephFSDataPoolPGNum: 32
