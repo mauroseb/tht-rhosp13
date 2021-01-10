@@ -1,0 +1,11 @@
+ parameter_defaults:
+   ControllerExtraConfig:
+     tripleo::haproxy::haproxy_defaults_override:
+     timeout:
+         - 'http-request 10s'
+         - 'queue 2m'
+         - 'connect 10s'
+         - 'client 20m'                                 
+         - 'server 20m'                                 
+         - 'check 10s'
+     maxconn: 8192  
