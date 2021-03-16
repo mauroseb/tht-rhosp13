@@ -1,6 +1,8 @@
  parameter_defaults:
    NovaResumeGuestsStateOnHostBoot: true
    NovaResumeGuestsShutdownTimeout: 300
+   ComputeExtraConfig:
+     nova::compute::reserved_host_memory: 1024
    ControllerExtraConfig:
      tripleo::haproxy::haproxy_defaults_override:
      timeout:
